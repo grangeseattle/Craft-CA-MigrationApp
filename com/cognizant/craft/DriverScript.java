@@ -847,7 +847,7 @@ public class DriverScript {
 			throws IllegalAccessException, InvocationTargetException, ClassNotFoundException, InstantiationException {
 		Boolean isMethodFound = false;
 		if(currentKeyword.contains("#")){
-			dataReferenceId = currentKeyword.split("#")[1];
+			String dataReferenceId = currentKeyword.split("#")[1];
 			currentKeyword=currentKeyword.split("#")[0];
 		}
 
